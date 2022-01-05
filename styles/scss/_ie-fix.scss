@@ -1,0 +1,68 @@
+html body .app.flex-row.align-items-center {
+  height: 100vh;
+}
+
+// ie11 floating footer temp fix, react only
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  #root {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .field-table-custom {
+    span.count-file-text {
+      top: 0;
+      line-height: 16px;
+    }
+  }
+
+  div[tabindex="-1"]:not(.modal) {
+    z-index: inherit !important;
+  }
+
+  .up-file-modal__item__box > input {
+    transition: none !important;
+  }
+
+  .file-sidebar__wrapper {
+    .sidebar {
+      &__footer {
+        height: 440px !important;
+      }
+
+      &__list {
+        max-height: calc(100% - 280px);
+        min-height: calc(100% - 280px);
+      }
+
+      &__header {
+        height: 200px !important;
+      }
+    }
+  }
+
+}
+
+// Apply on Edge browser only
+@supports (-ms-ime-align:auto) {
+  .field-table-custom {
+    span.count-file-text {
+      top: 0;
+      line-height: 16px;
+    }
+  }
+
+  .up-file-modal__item__box > input {
+    transition: none !important;
+  }
+}
+
+// Apply on Firefox browser only
+@supports (-moz-appearance:none) {
+  .field-table-custom {
+    span.count-file-text {
+      top: 0;
+      line-height: 16px;
+    }
+  }
+}

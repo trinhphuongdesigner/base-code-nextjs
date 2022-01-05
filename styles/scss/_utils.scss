@@ -1,0 +1,17 @@
+.un-break-word {
+  word-break: keep-all !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.disabled-element {
+  cursor: not-allowed !important;
+}
+
+@for $i from 8 through 40 {
+  .fz-#{$i} {
+    font-size: $i + 0px !important;
+  }
+}

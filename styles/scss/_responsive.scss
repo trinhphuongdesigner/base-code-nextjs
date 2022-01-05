@@ -1,0 +1,41 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .main .container-fluid {
+    padding: 0 10px;
+  }
+
+  .loading {
+    &__animation {
+      height: 20px !important;
+      width: 20px !important;;
+    }
+  }
+
+  .pagination {
+    overflow-x: auto;
+  }
+
+  .group-btn {
+    &__mid-btn {
+      margin-bottom: 10px;
+    }
+  }
+
+  .card-login {
+    .lang-register {
+      top: 50px !important;
+    }
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .payment__card {
+    width: 280px !important;
+  }
+}
+
+table.table-min-800 {
+  min-width: 800px;
+}
