@@ -1,4 +1,4 @@
-import PostPreview from '../components/post-preview';
+import PostPreview from './post-preview';
 
 const defaultImg = '/assets/blog/dynamic-routing/cover.jpg';
 const defaultDate = '2020-03-16T05:35:07.322Z';
@@ -23,5 +23,5 @@ export default function MoreStories({ posts }) {
         ))}
       </div>
     </section>
-  )
+  );
 }

@@ -1,7 +1,8 @@
-import Avatar from '../components/avatar'
-import DateFormatter from '../components/date-formatter'
-import CoverImage from '../components/cover-image'
-import Link from 'next/link'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import Link from 'next/link';
+import Avatar from './avatar';
+import DateFormatter from './date-formatter';
+import CoverImage from './cover-image';
 
 const defaultImg = '/assets/blog/dynamic-routing/cover.jpg';
 
@@ -10,7 +11,7 @@ export default function HeroPost({
   date,
   author,
   slug,
-  body
+  body,
 }) {
   return (
     <section>
@@ -40,5 +41,5 @@ export default function HeroPost({
         </div>
       </div>
     </section>
-  )
+  );
 }
