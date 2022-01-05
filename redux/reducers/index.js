@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-// import layoutReducer from './layout';
+import postsReducer from './post';
 
 const appReducer = combineReducers({
-  // layoutState: layoutReducer,
+  postsState: postsReducer,
 });
 
 export default appReducer;

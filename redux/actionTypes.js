@@ -1,2 +1,4 @@
-// LOGIN
-export const LOGIN = 'LOGIN';
+export const GET_POSTS = 'GET_POSTS';
+export const GET_POSTS_PENDING = 'GET_POSTS_PENDING';
+export const GET_POSTS_SUCCESS = 'GET_POSTS_SUCCESS';
+export const GET_POSTS_FAILURE = 'GET_POSTS_FAILURE';
