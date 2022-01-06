@@ -1,13 +1,13 @@
 import {
-  actionGetUsers,
-  actionGetUserPending,
-  actionGetUserSuccess,
-  actionGetUserFailure,
-} from './user';
+  actionGetAllPosts,
+  actionGetAllPostsPending,
+  actionGetAllPostsSuccess,
+  actionGetAllPostsFailure,
+} from './posts';
 
 export {
-  actionGetUsers,
-  actionGetUserPending,
-  actionGetUserSuccess,
-  actionGetUserFailure,
+  actionGetAllPosts,
+  actionGetAllPostsPending,
+  actionGetAllPostsSuccess,
+  actionGetAllPostsFailure,
 };

@@ -1,7 +1,7 @@
 import {
-  GET_POSTS_FAILURE,
-  GET_POSTS_PENDING,
-  GET_POSTS_SUCCESS,
+  GET_ALL_POSTS_FAILURE,
+  GET_ALL_POSTS_PENDING,
+  GET_ALL_POSTS_SUCCESS,
 } from '../actionTypes';
 
 const defaultState = {
@@ -11,20 +11,20 @@ const defaultState = {
 
 export default function (state = defaultState, action) {
   switch (action.type) {
-    case GET_POSTS_PENDING:
+    case GET_ALL_POSTS_PENDING:
       return {
         ...state,
         isLoading: true,
       };
 
-    case GET_POSTS_SUCCESS:
+    case GET_ALL_POSTS_SUCCESS:
       return {
         ...state,
         isLoading: false,
         data: action.payload,
       };
 
-    case GET_POSTS_FAILURE:
+    case GET_ALL_POSTS_FAILURE:
       return {
         ...state,
         isLoading: false,
